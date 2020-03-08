@@ -17,6 +17,10 @@ repositories {
 }
 
 dependencies {
+	
+	compile group: 'org.springframework', name: 'spring-core', version: '5.2.4.RELEASE'
+	compile group: 'org.springframework', name: 'spring-context', version: '5.2.4.RELEASE'
+		
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
 
