@@ -1,20 +1,26 @@
 package com.demo.service;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
 
+import com.demo.repository.EmployeeRepository;
 import com.demo.service.domain.Employee;
 
 @Service
 public class EmployeeService {
 
-	List<Employee> store = Stream.of(new Employee(1L, "Bob"), new Employee(2L, "Sam")).collect(Collectors.toList());
+	EmployeeRepository employeeRepository;
+	
+
+	public EmployeeService(EmployeeRepository employeeRepository) {
+		super();
+		this.employeeRepository = employeeRepository;
+	}
+
 
 	public List<Employee> getAllEmployees() {
-		return store;
+		return employeeRepository.findAll();
 	}
 
 }
