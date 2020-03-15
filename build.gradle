@@ -8,9 +8,11 @@ repositories {
 }
 
 dependencies {
-	
+	compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.0.47'
+	compile group: 'org.springframework', name: 'spring-webmvc', version: '5.2.4.RELEASE'
 	compile group: 'org.springframework', name: 'spring-core', version: '5.2.4.RELEASE'
 	compile group: 'org.springframework', name: 'spring-context', version: '5.2.4.RELEASE'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.2'
 		
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.

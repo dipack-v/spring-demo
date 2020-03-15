@@ -7,7 +7,7 @@ import static org.junit.Assert.assertFalse;
  */
 import org.junit.Test;
 
-import com.demo.service.EmployeeService;
+import com.demo.service.ProductService;
 
 public class DemoApplicationTest {
 	@Test
